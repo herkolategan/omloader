@@ -59,7 +59,7 @@ func (r *openMetricsReader) parseInput(input []byte) {
 			// Add a monitor label to all time series.
 			timeSeries.Labels[len(labels)] = prompb.Label{
 				Name:  "monitor",
-				Value: "gce-prom",
+				Value: "prom-gce",
 			}
 
 			var sample prompb.Sample
